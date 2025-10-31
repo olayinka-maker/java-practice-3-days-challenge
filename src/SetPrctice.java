@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.List;
+import java.util.*;
 
 public class SetPrctice {
 
@@ -10,6 +7,23 @@ public class SetPrctice {
         List<Integer>  userids = new ArrayList<>();
         HashSet<Integer> uniqueids = new HashSet<Integer>();
         LinkedHashSet<String> productTags = new LinkedHashSet<String>();
+        TreeSet<String>  storeTicker = new TreeSet<String>();
+
+
+        storeTicker.add("GOOG");
+        storeTicker.add("MSFT");
+        storeTicker.add("AAPL");
+        storeTicker.add("AMZN");
+        storeTicker.add("GOOG");
+
+        System.out.println(storeTicker);
+
+        String first = storeTicker.first();
+        String second = storeTicker.last();
+        System.out.println("first: " + first + "\n" + "second: " + second);
+
+
+
 
         productTags.add("Electronics");
         productTags.add("sale");
@@ -21,6 +35,7 @@ public class SetPrctice {
         System.out.println(productTags);
         productTags.remove("Gadgets");
         System.out.println(productTags);
+
 
 
 
